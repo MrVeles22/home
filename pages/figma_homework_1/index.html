@@ -1,14 +1,8 @@
-<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
 <!DOCTYPE html>
-<!-- Оболочка документа, указываем язык содержимого -->
 <html lang="en">
-	<!-- Заголовок страницы,контейнер для других важных данных(не отображается) -->
 	<head>
-		<!-- Заголовок страницы в браузере -->
 		<title>Домашнее задание из Figma</title>
-		<!-- Подключаем CSS -->
 		<link rel="stylesheet" href="css/style.css">
-		<!-- Кодировка страницы -->
 		<meta charset="UTF-8">
 		<!-- Адаптивность  -->
 		<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -20,20 +14,22 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<div class="header">
+			<header class="header">
 				<div class="container">	
 					<div class="header__row">
 						<div class="header__logo">
-							<img src="img/icons/logo/logo.svg" alt="">
+							<a href="#!">
+								<img src="img/icons/logo/logo.svg" alt="PiedPiper">
+							</a>
 						</div>
-						<div class="header__nav">
-							<a href="#link1">the problem</a>
-							<a href="#link2">PiedPiperCoin</a>
-							<a href="#link3">the team</a>
-						</div>
+						<ul class="header__nav">
+							<li><a href="#link1" class="header__link">the problem</a></li>
+							<li><a href="#link2" class="header__link">PiedPiperCoin</a></li>
+							<li><a href="#link3" class="header__link">the team</a></li>
+						</ul>
 					</div>
 				</div>
-			</div>
+			</header>
 			<div class="content">
 				<div class="top">
 					<div class="container">
