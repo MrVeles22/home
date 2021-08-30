@@ -16,8 +16,14 @@ img{vertical-align:top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 /*Конец обнуления*/
 
+
 body{
 	font-family: Roboto;
+	font-style: normal;
+	line-height: 1.2;
+	font-weight: normal;
+	color: #000000;
+
 }
 
 .wrapper {
@@ -32,22 +38,30 @@ body{
 	margin: 0px auto;
 }
 
+/*Начало кода для хедера*/
+
 .header {
 	background-color: #007765;
+/*	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;*/
+
 }
 
 .header__row{
-	height: 84px;
+	max-height: 84px;
 	display: flex;
 	justify-content: space-between;
 	align-items:center;
+	padding: 20px 2px;
+
 }
 
 .header__logo {
-}
-
-.header__logo img{
-max-width: 184px;
+	display: flex;
+	max-width: 184px;
+	flex-shrink: 1;
 }
 
 .header__nav{
@@ -55,14 +69,22 @@ max-width: 184px;
 	flex-wrap: wrap;
 }
 
-.header__nav a{
-	display: block;
+.header__nav li{
 	color: #fff;
 	padding: 5px 11px;
 	border-right:2px solid #fff;
 }
+.header__nav li a{
+	color: #fff;
+	text-decoration: none;
+}
+.header__link:hover, .header__link:focus, .header__link:active{
+	color: #000000;
 
-.header__nav a:last-child{
+}
+
+.header__nav li:last-child{
+	padding: 5px 2px 5px 11px ;
 	border-right:none;
 }
 
@@ -71,6 +93,10 @@ max-width: 184px;
 	flex-direction: row;
 	justify-content: space-between;
 }
+
+/*Конец кода для хедера*/
+
+/*Начало кода для контента*/
 
 .content {
 	flex: 1 1 auto;
