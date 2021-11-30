@@ -283,12 +283,15 @@ img {
 .comment__commentor {
   display: flex;
   max-width: 400px;
-  margin: 0 auto;
-  padding: 0 5px 60px;
+  margin: 0 auto 0 0;
+  padding: 0 5px 60px 30px;
 }
 
 .services--commentor__img {
   padding-right: 30px;
+}
+.services__comment .comment__commentor .commentor__about {
+  align-self: center;
 }
 .services--commentor__name {
   font-weight: 700;
@@ -320,6 +323,11 @@ img {
   }
   .services--comment__text {
     padding-top: 0;
+  }
+
+  .services--commentor__img {
+    height: 90px;
+    padding-right: 10px;
   }
 }
 
@@ -858,15 +866,21 @@ img {
 
 @media screen and (max-device-width: 860px) {
   .footer__info--row {
-    flex-wrap: wrap;
+    padding-top: 0;
+    border: none;
   }
-
   .info-row__items--column {
     padding: 10px;
   }
+  .info-row__items--column {
+    display: none;
+  }
   .info-row__items--column:nth-child(4) {
-    padding: 10px;
+    display: block;
+    padding: 0px;
     border: none;
-    margin: 0 auto;
+  }
+  .bottom__logo {
+    padding-right: 15px;
   }
 }
