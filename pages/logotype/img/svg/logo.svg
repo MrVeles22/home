@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="145" height="23" viewBox="0 0 145 23">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 30px;
+        fill: #ffc222;
+        font-family: Roboto;
+        font-weight: 500;
+      }
+
+      .cls-2 {
+        fill: #212020;
+        font-weight: 200;
+      }
+    </style>
+  </defs>
+  <text id="LOGOTYPE" class="cls-1" x="-1.999" y="22">LOGO<tspan class="cls-2">TYPE</tspan></text>
+</svg>
