@@ -1,0 +1,231 @@
+/* PC  */
+@media (max-width: 1087px) {
+  [class*="__container"] {
+    max-width: 970px;
+  }
+  .get-started__container {
+    display: block;
+  }
+
+  .get-started__text {
+    margin: 0 0 20px 0;
+  }
+  .get-started__video-btn {
+    padding: 20px 0 0 0px;
+  }
+}
+
+/* TABLET  */
+@media (max-width: 991.98px) {
+  [class*="__container"] {
+    max-width: 750px;
+  }
+  .header__button {
+    width: 170px;
+  }
+  .menu__item {
+    margin: 0 30px 0 0;
+  }
+  .get-started__container::before {
+    right: 185px;
+  }
+  .stay-safe__container {
+    flex-direction: column-reverse;
+  }
+  .healthcare__cards {
+    column-gap: 30px;
+  }
+}
+
+/* MOBILE  */
+@media (max-width: 767.98px) {
+  [class*="__container"] {
+    max-width: none;
+  }
+  .get-started__container {
+    padding: 114px 15px 48px 15px;
+  }
+  /* burger styles  */
+  .burger {
+    width: 40px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .burger__icon {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    z-index: 6;
+    margin: 0;
+  }
+  .burger__line,
+  .burger__icon::after,
+  .burger__icon::before {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: #000;
+    transition: all 0.4s ease;
+  }
+  .burger__line {
+    top: 50%;
+    transform: scale(1) translateY(-50%);
+  }
+  .burger__icon::after {
+    content: "";
+    top: 0;
+  }
+  .burger__icon::before {
+    content: "";
+    bottom: 0;
+  }
+  .burger__icon.--active .burger__line {
+    transform: scale(0);
+  }
+  .burger__icon.--active::after {
+    background-color: #fff;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .burger__icon.--active::before {
+    background-color: #fff;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  /* menu styles  */
+  .menu__list {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: -150%;
+    opacity: 0;
+    visibility: hidden;
+    padding: 100px 20px 40px 60px;
+    transition: all 0.3s linear;
+    overflow: auto;
+  }
+  .menu__item {
+    margin: 0 0 30px 0;
+  }
+  .menu__item:last-child {
+    margin: 0;
+  }
+  .menu__link {
+    color: #fff;
+    font-size: 24px;
+  }
+  .menu.--active .menu__list {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    /* transition: left 0.3s linear; */
+    /* transition: opacity 0.2s ease 0.1s; */
+    display: block;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .get-started__container::before {
+    display: none;
+  }
+  .text {
+    max-width: 100%;
+  }
+  .stay-safe {
+    padding: 40px 0;
+  }
+  .stay-safe__image::before {
+    display: none;
+  }
+  .experts {
+    padding: 40px 0 40px 0;
+  }
+  .experts__stats {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .experts__content-wrap {
+    flex-direction: column;
+    row-gap: 20px;
+    max-height: none;
+  }
+  .experts__text {
+    margin: 0;
+  }
+  .experts__stats-wrap {
+    margin: 0 0 25px 0;
+  }
+  .experts__video-wrap {
+    width: 100%;
+  }
+  .healthcare {
+    padding: 40px 0;
+  }
+  .healthcare__cards {
+    flex-wrap: wrap;
+  }
+  .healthcare-card__item-wrap-3::after {
+    left: 50px;
+    top: auto;
+    bottom: -30px;
+  }
+}
+
+/* MOBILE  SMALL*/
+@media (max-width: 479.98px) {
+  [class*="__container"] {
+    max-width: none;
+  }
+  .header__container {
+    min-height: 80px;
+  }
+  .header__logo {
+    display: flex;
+    flex: 0 0 40px;
+    overflow: hidden;
+    margin-right: 30px;
+  }
+  .header__button {
+    display: block;
+    width: 100%;
+  }
+  .burger {
+    left: auto;
+    right: 0;
+  }
+  .get-started__container {
+    padding: 80px 15px 25px 15px;
+  }
+  .text__title {
+    font-size: 34px;
+    line-height: 110%;
+  }
+  .text__button {
+    width: 100%;
+    text-align: center;
+  }
+  .stay-safe {
+    padding: 25px 0;
+  }
+  .stay-safe__image-wrapper {
+    margin: 0;
+  }
+  .stay-safe__image-scenery {
+    width: 290px;
+  }
+  .scenery__item-2 {
+    display: none;
+  }
+  .scenery__item-3 {
+    left: auto;
+    right: 0;
+    bottom: 10px;
+    transform: rotate(30deg);
+  }
+  .experts__stats {
+    padding: 20px;
+  }
+}
