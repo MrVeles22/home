@@ -26,7 +26,7 @@
     <link rel="manifest" href="img/favicon/site.webmanifest" />
     <meta name="msapplication-TileColor" content="#00aba9" />
     <meta name="theme-color" content="#ffffff" />
-    <link rel="stylesheet" href="css/style.pref.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
@@ -401,14 +401,10 @@
       <!-- Video start -->
       <div class="video" id="videos">
         <div class="video__wrapper">
-          <div class="video__help-block"></div>
-          <iframe
-            class="video__source"
-            src="https://www.youtube.com/embed/F0AT_7uVbeo"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <div
+            class="video__help-block"
+            data-src="src='https://www.youtube.com/embed/F0AT_7uVbeo?autoplay=1'"
+          ></div>
         </div>
       </div>
     </main>
@@ -476,6 +472,6 @@
         </nav>
       </div>
     </footer>
-    <script src="js/main-es5.min.js"></script>
+    <script src="js/main-es6.js"></script>
   </body>
 </html>

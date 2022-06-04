@@ -55,8 +55,8 @@
 					window.scrollTo(0,run);
 					if (timeElapsed < duration) requestAnimationFrame(animation);
 			};
-			requestAnimationFrame(animation);
 
+			requestAnimationFrame(animation);
 	};
 
 	const scrollTo = function () {
@@ -70,3 +70,23 @@
 	};
 	scrollTo();
 }());
+
+window.addEventListener('DOMContentLoaded', function (){
+
+	var videos = document.querySelectorAll('.video__help-block');
+
+	videos.forEach(function(video){
+
+		video.addEventListener('click', function(){
+			if (video.classList.contains('video--active')){
+				return;
+			};
+
+			video.classList.add('video--active');
+
+			var source = video.dataset.src;
+
+			video.insertAdjacentHTML('afterbegin', '<iframe class="video__source"' + source + ' title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+		});
+	});
+});
